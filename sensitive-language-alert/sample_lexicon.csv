@@ -1,4 +1,4 @@
 ﻿term,type
-cookie,food
-cat,animal
-wizard,magicalBeing
+\bcookie\b,food
+\bcat\b,animal
+\bwizard\b,magicalBeing
