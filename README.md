@@ -2,7 +2,7 @@
 Scripts and templates for working with transcripts. This repository contains two subsets of scripts: checking accuracy of transcription and checking for sensitive language.
 
 ## Sensitive Language Alerting
-Materials for testing plain text documents for sensitive language, e.g. ethnic slurs.
+Materials for testing UTF-8 encoded documents for sensitive language, e.g. ethnic slurs.
 
 ### Origin
 AI speech-to-text documents, such as transcripts, contain hallucinations prior to editing. Because it takes approximately 2-5 hours for every hour of materials to correct a transcript, it would be ideal for transcripts to not have to undergo full review before posting publicly, albeit with warning text. However, some hallucinations could be incredibly damaging, such as ethnic slurs. In those cases, transcripts should be reviewed fully before being released to the public. Inspired by tools for reparative description reporting such as [MaRMAT](https://www.marmatproject.org/), here's a little script for checking UTF-8 encoded documents in a file directory against a lexicon of your choosing in .csv format, which returns a .csv report with the flagged terms and their index in each document.
