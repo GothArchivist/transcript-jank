@@ -20,7 +20,6 @@ def match():
         term = row[0] #terms should be in the first column
         pattern = r'\b' + re.escape(term) + r'\b'
         t = re.compile(pattern, re.I)
-        print(t)
         transcriptDirectory = r'/path/to/file' #Filepath to folder that the transcripts are stored in. This should be different from where the lexicon and report are/will be stored
         for e in os.scandir(transcriptDirectory):
             identify_file = e
