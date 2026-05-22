@@ -25,12 +25,11 @@ def match():
             transcript = open(e.path, "r")
             tr = transcript.read()
             for match in re.finditer(term, tr, re.I):
-                #print(match.group(), "start index", match.start(), "End index", match.end()) #includes the terms and the index position so you can find it in the document
                 alert_file = {'filename': [af], 'alert':[match]}
                 df = pd.DataFrame(alert_file)
                 df_list.append(df)
                 result = pd.concat(df_list)
-                result.to_csv('/path/to/csv', encoding="utf-8") #put in the full filepath. The file does not need to already exist
+                result.to_csv('/path/to/csv', encoding="utf-8") #put in the full filepath. The file does not need to already exist, but the directory does.
                 
 match()
 
