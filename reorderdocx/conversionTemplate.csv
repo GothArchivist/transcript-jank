@@ -1,0 +1,4 @@
+﻿filepath,output
+/path/to/file/filename1.docx,/path/to/file/filename1.txt
+/path/to/file/filename2.docx,/path/to/file/filename2.txt
+/path/to/file/filename3.docx,/path/to/file/filename3.txt
