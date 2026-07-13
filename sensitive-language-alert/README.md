@@ -12,4 +12,4 @@ The script requires the following:
 Steps:
 * In the script, insert the filepath to the lexicon in ``file`` function in the ``lexicon_input()`` function. Insert the filepath, including a .csv filename, in ``result.to_csv`` in the ``match()`` function for the report to be created. Do not store these in the same directory as the transcripts to test.
 * Run the script. The regex in it is set to ignore case.
-* You will receive back a .csv report with the filename and all instances of the term being used in the document.
+* You will receive back a .csv report with the filename and all instances of the term being used in the document with their line numbers.
