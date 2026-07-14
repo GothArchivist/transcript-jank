@@ -10,6 +10,6 @@ The script requires the following:
 * One .csv document that contains the lexicon with the term to search in the first column (``row[0]``). The original test data I used to populate this was a subset of terms from MaRMAT's ``reparative-metadata-lexicon_20260412.csv``; for my own work, I have since created a simplified lexicon for what I'd consider serious enough to trigger a full review. I included a template in this repository with filler terms (i.e. not sensitive) so you can see what it looks like. No matter whether it's a proper noun or not, I suggest putting in the term all lowercase.
 
 Steps:
-* In the script, insert the filepath to the lexicon in ``file`` function in the ``lexicon_input()`` function. Insert the filepath, including a .csv filename, in ``result.to_csv`` in the ``match()`` function for the report to be created. Do not store these in the same directory as the transcripts to test.
+* In the script, insert the filepath to the lexicon in ```file``` function in the ```lexicon_input()``` function. Limit the file format(s) to check for in the ```format = ()``` function within the ```match()``` function. Insert the filepath, including a .csv filename, in ```result.to_csv``` in the ```match()``` function for the report to be created. Do not store these in the same directory as the transcripts to test.
 * Run the script. The regex in it is set to ignore case.
-* You will receive back a .csv report with the filename and all instances of the term being used in the document with their line numbers.
+* You will receive back a .csv report with the filename and all instances of the term being used in the document.
