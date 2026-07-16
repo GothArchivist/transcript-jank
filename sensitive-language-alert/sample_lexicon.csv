@@ -1,5 +1,8 @@
 ﻿term,type
 cookie,food
-cat,animal
+ cat ,animal
+ cat.,animal
 wizard,magicalBeing
 poland,place
+puppet,item
+Starachowice,place
