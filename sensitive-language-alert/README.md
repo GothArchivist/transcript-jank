@@ -1,4 +1,4 @@
-# Sensitive Term Alerts
+# Sensitive Language Alerts
 Materials for testing plain text documents for sensitive language, e.g. ethnic slurs.
 
 ## Origin
