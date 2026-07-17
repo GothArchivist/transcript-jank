@@ -27,5 +27,5 @@ The script requires the following:
 * One .csv document that contains the lexicon with the term to search in the first column (```row[0]```).
 
 Steps:
-* Run the script. It will prompt you to provide the file path for the lexicon, the path to the folder with the transcripts, and the file path to the CSV report. The lexicon and report should not be stored with the transcripts.
+* Run the script. It will prompt you to provide the file path for the lexicon, the path to the folder with the transcripts, and the file path to the CSV report. The lexicon and report should not be stored with the transcripts. The regex in the search is set to ignore case.
 * You will receive back a .csv report with the file name, the start time, the end time, and the line from the captions with the matching term.
