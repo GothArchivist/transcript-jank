@@ -6,7 +6,7 @@ AI speech-to-text documents, such as transcripts, contain hallucinations prior t
 
 ## The files
 * **check_sensitive_language_with_line.py**. This looks at all UTF-8 encoded documents within a file directory against a lexicon of your choosing. This is ideal for plain text transcripts.
-* **check_sensitive_language_vtt_srt.py**. This specifically looks at .vtt and .srt files within a file directory against a lexicon of your choosing.
+* **check_sensitive_language_vtt_srt_regex.py**. This specifically looks at .vtt and .srt files within a file directory against a lexicon of your choosing.
 * **sample_lexicon.csv**. This serves as a template for a lexicon. (There is no sensitive language in this file, just placeholder text.)
 
 ## How to use this
@@ -21,11 +21,11 @@ Steps:
 * Run the script. The regex in it is set to ignore case.
 * You will receive back a .csv report with the filename, the term used in the file, and the line number it appears in.
 
-### **check_sensitive_language_vtt_srt.py**
+### **check_sensitive_language_vtt_srt_regex.py**
 The script requires the following:
 * At least two or more .srt or .vtt documents kept in a file directory.
 * One .csv document that contains the lexicon with the term to search in the first column (```row[0]```).
 
 Steps:
-* Run the script. It will prompt you to provide the file path for the lexicon, the path to the folder with the transcripts, and the file path to the CSV report. The lexicon and report should not be stored with the transcripts. **Unfortunately, I can't get the ```re``` library to work with the ```webvtt``` library, so this lexicon will need exact matching, including accounting for case, spacing, and punctuation. I hope this can be resolved and it's just a case of my less-than-ideal Python skills.**
+* Run the script. It will prompt you to provide the file path for the lexicon, the path to the folder with the transcripts, and the file path to the CSV report. The lexicon and report should not be stored with the transcripts.
 * You will receive back a .csv report with the file name, the start time, the end time, and the line from the captions with the matching term.
