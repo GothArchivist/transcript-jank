@@ -19,7 +19,7 @@ The script requires the following:
 Steps:
 * In the script, insert the file path to the lexicon in ```file``` function in the ```lexicon_input()``` function. Limit the file format(s) to check for in ```format = ()``` within the ```match()``` function. Insert the file path, including a .csv filename, in ```result.to_csv``` in the ```match()``` function for the report to be created. Do not store these in the same directory as the transcripts to test.
 * Run the script. The regex in it is set to ignore case.
-* You will receive back a .csv report with the filename, the term used in the file, and the line number it appears in.
+* You will receive back a .csv report with the filename, the term used in the file with the previous four words included, and the line number it appears in.
 
 ### **check_sensitive_language_vtt_srt_regex.py**
 The script requires the following:
