@@ -9,7 +9,7 @@ for filename in os.listdir(directory):
     if os.path.isfile(f):  # checking if it is a file
         if f.endswith('.txt'): #I left the extension on these as .txt, but you could do .tsv as well. Or even make this work for .csv!
             print(f) #Only have this here in case you want to check things.
-            df = pd.read_table(f, sep='\t') #if you want to use a csv, leave off the sep='\t'. 
+            df = pd.read_table(f, sep='\t') #if you want to use a csv, leave off the sep='\t'. If you want to use some other kind of separator, put that in instead.
             print(df) #Same deal with checking things
             columnsTitles = ['timestamp', 'speaker', 'text'] #I'm using the names of the columns in the original document but in the order I want them to be in here. 
             df2 = df.reindex(columns=columnsTitles) #does the reorder
