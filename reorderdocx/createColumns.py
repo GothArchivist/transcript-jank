@@ -14,7 +14,7 @@ def createColumn():
 
                 output = '/path/to/file' #insert full filepath. You can even use the same filepath as the original one, as it will write over that document
                 with open(output, "w", encoding="utf-8") as file:
-                    file.write(sub2)
+                    file.write("speaker\ttimestamp\tspeech\n"+ sub2) #this adds the header row for reordering
 
 createColumn()
 
