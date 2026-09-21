@@ -6,7 +6,7 @@ The Fortunoff Archive transcribed many of its testimonies using the Trint applic
 
 ## The files
 * **createReorderColumns.py** The actual worfklow script. Over multiple plain text files in a directory/directories, this creates columns using regex, reorders the columns using pandas, then removes the columns and headers using regex again.
-* **convertDocxToText.py** This batch converts multiple .docx documents to .txt using pypandoc. Requires a CSV for file information.* 
+* **convertDocxToText.py** This batch converts multiple .docx documents to .txt using pypandoc. Requires a CSV for file information. 
 * **conversionTemplate.csv** This is a template for the file information you need to provide **convertDocxToText.py**
 * **reorderColumns.py** This is a standalone version of the reordering function in the **createReorderColumns.py** script, which will be easier to modify if you're working with other spreadsheet files. 
 
