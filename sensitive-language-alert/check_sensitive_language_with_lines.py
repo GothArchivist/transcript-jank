@@ -21,6 +21,7 @@ def match():
         term = row[0] #terms should be in the first column
         t = re.compile(r'(?:[A-Za-z]+ ){4}\b' + term + r'\b', re.I) #finds the term as standalone words, not case-sensitive
         transcriptDirectory = r"/path/to/file" #Filepath to folder that the transcripts are stored in. This should be different from where the lexicon and report are/will be stored
+        format = ('.txt') #select formats to review. You can choose multiple ones by adding a comma between each one, e.g. format = ('.vtt','.txt')
         for e in os.scandir(transcriptDirectory):
             if e.path.endswith(format):
                 identify_file = e
